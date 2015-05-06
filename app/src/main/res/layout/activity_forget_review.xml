@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/review_current_phone"
+                android:singleLine="true"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/review_ago_phone"
+                android:singleLine="true"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/review_major"
+                android:singleLine="true"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/review_grade"
+                android:singleLine="true"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/review_studentno"
+                android:singleLine="true"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/review_name"
+                android:singleLine="true"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

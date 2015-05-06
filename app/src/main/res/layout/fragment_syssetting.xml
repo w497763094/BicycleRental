@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/work_backgroud">
+    <include layout="@layout/toolbar"/>
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/syssetting_recycleview"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_line"/>
+    <LinearLayout
+        android:id="@+id/sysseting_exit"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="55dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/sys_exit"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"/>
+        <TextView
+            android:id="@+id/sysseting_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/seqnum_text_color"
+            android:text="@string/exit"
+            android:textSize="18dp"/>
+        </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadow_line"/>
+</LinearLayout>

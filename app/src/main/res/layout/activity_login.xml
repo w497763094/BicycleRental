@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/work_backgroud">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/login_account"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_hint_phone"
+                android:singleLine="true"
+                android:textColorHint="@color/edittext_hint"
+                app:met_clearButton="true"
+                app:met_errorColor="@color/edittext_error"
+                app:met_floatingLabel="highlight" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/login_pwd"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/password"
+                    android:singleLine="true"
+                    app:met_floatingLabel="highlight" />
+
+                <CheckBox
+                    android:id="@+id/pwd_visible"
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/pwd_visible_selector"
+                    android:button="@null"
+                    android:checked="true" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/login_forgetpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/toolbar_backgroud"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        app:fab_colorNormal="@color/fab_green_normal"
+        app:fab_colorPressed="@color/fab_green_pressed"
+        app:fab_icon="@drawable/affirm"
+        app:fab_size="normal" />
+</RelativeLayout>

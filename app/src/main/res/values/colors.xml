@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- homework -->
+    <color name="toolbar_backgroud">#1abc9c</color>
+    <color name="work_backgroud">#ececec</color>
+    <color name="black">#000000</color>
+    <!--menu-->
+    <color name="menu_backgroud">#3a4852</color>
+    <color name="menu_item_line">#313c43</color>
+    <color name="menu_item_backgroud_press">#36434c</color>
+    <color name="hintcolor">#9c9c9c</color>
+    <color name="white">#ffffff</color>
+    <color name="dividercolor">#b2b2b2</color>
+    <color name="seqnum_text_color">#666666</color>
+    <!--login&register-->
+    <color name="btn_login_normal">#1abc9c</color>
+    <color name="btn_login_press">#18a88c</color>
+    <color name="btn_register_normal">#374d5d</color>
+    <color name="btn_register_press">#283743</color>
+    <color name="edittext_hint">#999999</color>
+    <color name="btn_getcode_press">#bbbbbb</color>
+    <color name="btn_getcode_normal">#ffffff</color>
+    <color name="edittext_error">#ff4c4c</color>
+    <color name="edittext_error_hint">#fa8282</color>
+    <color name="auth_line">#dadada</color>
+    <color name="btn_login_email_normal">#1abc9c</color>
+    <color name="btn_login_email_press">#18a88c</color>
+    <color name="btn_finish_auth_normal">#3ab7f1</color>
+    <color name="btn_finish_auth_press">#34a5d9</color>
+    <color name="email_auth_msg">#666666</color>
+
+    <!--FloatingActionButton-->
+    <color name="fab_black_semi_transparent">#B2000000</color>
+    <color name="fab_background">#e5e5e5</color>
+    <color name="fab_half_black">#808080</color>
+    <color name="fab_white">#fafafa</color>
+    <color name="fab_white_pressed">#f1f1f1</color>
+    <color name="fab_pink">#e91e63</color>
+    <color name="fab_pink_pressed">#ec407a</color>
+    <color name="fab_blue_semi_transparent">#805677fc</color>
+    <color name="fab_blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="fab_green_normal">#48d8c3</color>
+    <color name="fab_green_pressed">#41c2af</color>
+</resources>

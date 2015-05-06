@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/toolbar_backgroud</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/toolbar_backgroud</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="AppNoAcitionBar" parent="AppBaseTheme"></style>
+    <style name="EditTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+</resources>

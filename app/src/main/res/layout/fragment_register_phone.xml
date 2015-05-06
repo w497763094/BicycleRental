@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/work_backgroud"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/register_edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/phone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="18sp"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/register_edit_studentid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/register_studentid"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="18sp"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/register_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/register_name"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="18sp"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/register_edit_pwd"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:singleLine="true"
+                    app:met_floatingLabel="highlight" />
+
+                <CheckBox
+                    android:id="@+id/register_pwd_visiable"
+                    android:layout_width="25dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/pwd_visible_selector"
+                    android:button="@null"
+                    android:checked="true" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/register_edit_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/auth_code"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight" />
+
+                <Button
+                    android:id="@+id/register_getcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/btn_getcode_normal"
+                    android:text="@string/get_authcode" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/register_msg" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/register_fab_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="10dp"
+        app:fab_colorNormal="@color/fab_green_normal"
+        app:fab_colorPressed="@color/fab_green_pressed"
+        app:fab_icon="@drawable/affirm"
+        app:fab_size="normal" />
+</RelativeLayout>

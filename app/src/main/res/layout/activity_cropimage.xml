@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark">
+        
+    <com.wudebin.bicyclerental.imagecropper.CropImageView
+        android:id="@+id/CropWindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cancal_corppor_page"
+            android:onClick="onClickReset"/>
+         <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:layout_centerHorizontal="true"
+              android:background="@drawable/rate_image_btn"
+              android:onClick="onClickRotate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/save_corpper_image"
+            android:onClick="onClickCrop"/>
+        
+    </RelativeLayout>
+        
+</FrameLayout>

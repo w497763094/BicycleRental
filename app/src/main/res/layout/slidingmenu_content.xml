@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:layout_height="match_parent"
+    android:background="@color/menu_backgroud">
+    <LinearLayout
+        android:id="@+id/person_set"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/menu_person_backgroud"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <com.wudebin.bicyclerental.util.RoundImageView
+            android:id="@+id/user_photo"
+            android:layout_margin="20dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@drawable/test"/>
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="艾薇儿"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:id="@+id/user_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:text="南开中学"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/menu_sign_backgroud">
+                    <TextView
+                        android:id="@+id/user_signature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@android:color/white"
+                        android:text="个性签名:我是一个萌妹子！"/>
+                </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/slidingmenu_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:scrollbars="none"
+        android:divider="@null">
+    </ListView>
+
+
+</LinearLayout>

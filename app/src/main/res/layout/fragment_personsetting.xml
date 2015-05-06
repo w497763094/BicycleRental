@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/work_backgroud">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/perset_image_height">
+    <ImageView
+        android:id="@+id/perset_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/example" />
+    <ImageView
+        android:id="@+id/perset_photo_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/perset_photo"
+        android:src="@drawable/photo_bottom"/>
+</RelativeLayout>
+    <View
+        android:id="@+id/perset_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/perset_image_height"
+        android:background="?attr/colorPrimary" />
+
+    <View
+        android:id="@+id/perset_list_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" />
+
+    <com.wudebin.bicyclerental.observablerecyclerview.ObservableRecyclerView
+            android:id="@+id/perset_recycler"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="none" />
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="56dp"
+        android:paddingLeft="56dp"
+        android:paddingStart="56dp">
+
+        <TextView
+            android:id="@+id/perset_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minHeight="?attr/actionBarSize"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/perset_image_height"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+</FrameLayout>

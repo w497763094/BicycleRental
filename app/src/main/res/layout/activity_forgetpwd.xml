@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/work_backgroud">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/forget_hint" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/auth_line"></View>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/forget_edit_account"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_hint_phone"
+                android:singleLine="true"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight" />
+
+            <TextView
+                android:id="@+id/forget_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:text="@string/lose_phone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/forget_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        app:fab_colorNormal="@color/fab_green_normal"
+        app:fab_colorPressed="@color/fab_green_pressed"
+        app:fab_icon="@drawable/next"
+        app:fab_size="normal" />
+</RelativeLayout>
